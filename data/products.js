@@ -42,7 +42,7 @@ class Product{
 
 const product1 = new Product({
     id: '84c7850d-bc08-4acb-8c80-58cc62e1bdd0',
-    image: '/images/pc-sale-1.png',
+    image: 'images/pc-sale-1.png',
     name: 'The gamechanger',
     availability: 'In stock',
     graphicsCard: 'Palit NVIDIA GeForce rtx 4070',
@@ -67,7 +67,7 @@ class Laptops extends Product {
 }
 const laptop = new Product({
     id: 'f15bba30-c722-4454-bca5-14c18fd28ce1',
-    image: '/images/pc-sale-1.png',
+    image: 'images/pc-sale-1.png',
     name: 'Lenovo ROG Gaming',
     availability: 'Not in stock',
     graphicsCard: 'Palit NVIDIA GeForce rtx 4070',
@@ -85,7 +85,7 @@ const laptop = new Product({
 
 export const products = [{
     id: '84c7850d-bc08-4acb-8c80-58cc62e1bdd0',
-    image: '/images/pc-sale-1.png',
+    image: 'images/pc-sale-1.png',
     name: 'The gamechanger',
     availability: 'In stock',
     graphicsCard: 'Palit NVIDIA GeForce rtx 4070',
@@ -100,7 +100,7 @@ export const products = [{
 },
 {
     id: '7b0402e4-8e5f-4c83-adab-584fe2850bb3',
-    image: '/images/pc-sale-1.png',
+    image: 'images/pc-sale-1.png',
     name: 'Big homie',
     availability: 'In stock',
     graphicsCard: 'Palit NVIDIA GeForce rtx 4070',
@@ -115,7 +115,7 @@ export const products = [{
 },
 {
     id: '8879e985-e813-4b21-90cb-8a23792ddaae',
-    image: '/images/pc-sale-1.png',
+    image: 'images/pc-sale-1.png',
     name: 'Ultra-predator',
     availability: 'In stock',
     graphicsCard: 'Palit NVIDIA GeForce rtx 4070',
@@ -130,7 +130,7 @@ export const products = [{
 },
 {
     id: 'f15bba30-c722-4454-bca5-14c18fd28ce1',
-    image: '/images/pc-sale-1.png',
+    image: 'images/pc-sale-1.png',
     name: 'The infinete force',
     availability: 'Not in stock',
     graphicsCard: 'Palit NVIDIA GeForce rtx 4070',
@@ -145,7 +145,7 @@ export const products = [{
 },
 {
     id: 'f15bba30-c722-4454-bca5-14c18fd28ce1',
-    image: '/images/pc-sale-1.png',
+    image: 'images/pc-sale-1.png',
     name: 'Lenovo ROG Gaming',
     availability: 'Not in stock',
     graphicsCard: 'Palit NVIDIA GeForce rtx 4070',
