@@ -1,4 +1,4 @@
-import {cart, addToCart, updatedCartQuantity} from '/data/cart.js';
+import {cart, addToCart, updatedCartQuantity} from './data/cart.js';
 
 window.onload = function() {
     const params = new URLSearchParams(window.location.search);
