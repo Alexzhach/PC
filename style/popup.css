@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* Fonts */
+    --FF: "Nunito", sans-serif;
+    --FF-headers: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* Colors */
+    --HEADER-COLOR: #E7DFDD;
+    --FONT-COLOR: #0E0B16;
+    --FONT-COLOR-HOVER: #585d5e;
+    --ACCENT-COLOR1: #191617;
+    --ACCENT-COLOR2: #A5A3A6;
+    --WHITE-COLOR: white;
+
+
+    /* Paddings */
+    --PADDING-TB: 0.25em;
+    --PADDING-SIDE: 2.5%;
+
+    /* STANDARD MARGIN */
+    --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+    }
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* POPUP */
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    min-width: 420px;
+    max-width: 450px;
+    min-height: 520px;
+    max-height: 450px;
+    z-index: 2;
+    text-align: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    color: gray;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup .close-btn::before{
+    color: black;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+/* CONTENT */
+
+label:before {
+    content: '';
+    top: 50%;
+    left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 16px; 
+    height: 16px; 
+    border-radius: 50%; 
+    border: 2px solid #ccc; 
+}
+
+input[type="radio"]:checked + label{
+    background-color: var(--ACCENT-COLOR2);
+    color: var(--HEADER-COLOR);
+}
+
+input[type="radio"]:checked + label:before {
+    height: 16px;
+    width: 16px;
+    border: 10px solid white;
+    background-color: #0E0B16;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    position: relative;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid var(--ACCENT-COLOR2);
+    border-radius: 5px;
+    margin-top: 20px;
+}
