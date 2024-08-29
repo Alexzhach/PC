@@ -85,7 +85,7 @@ export function renderOrderSummary(){
                             </div>
                         </div>
                         <div class="main__cart__product__delete" data-product-id="${matchingProduct.id}">
-                            <img class="main__cart__product__delete__image js-delete-link-${matchingProduct.id}" src="/images/trash.png" alt="delete">
+                            <img class="main__cart__product__delete__image js-delete-link-${matchingProduct.id}" src="images/trash.png" alt="delete">
                         </div>
                     </div>
                 </div>
